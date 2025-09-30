@@ -1,0 +1,9 @@
+resource "local_file" "hello" {
+  content  = "Hello, World!!!!!!!!"
+  filename = "${path.module}/hello.txt"
+}
+
+resource "local_file" "hello_again" {
+  content  = "hello_again, World!!!!!!!!"
+  filename = "${path.module}/hello_again.txt"
+}
